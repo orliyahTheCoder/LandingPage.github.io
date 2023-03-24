@@ -1,0 +1,375 @@
+body {
+  background-color: white;
+  font-family: "Comfortaa", cursive;
+}
+
+/* Navbar Section */
+
+#navbar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 29px;
+  font-family: "Fredoka One", cursive;
+  margin: 10px;
+}
+
+.profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.left-side {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.profile-name {
+  font-weight: bolder;
+  margin-right: 6px;
+}
+
+i {
+  color: lightgray;
+  font-size: 24px;
+  position: relative;
+  bottom: 12px;
+  margin-right: 38px;
+}
+
+/* Carousel Section */
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides-item {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 100px;
+  justify-content: center;
+  scroll-snap-align: start;
+  height: 650px;
+  margin: 0 1rem;
+  position: relative;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.5s;
+  width: 100%;
+}
+
+.carousel__nav {
+  padding: 1.25rem 0.5rem;
+}
+
+.slider-nav {
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slide-1 {
+  background-color: rgb(250, 246, 246);
+}
+
+.slide-2 {
+  background-color: #ffeaea;
+}
+
+/* First Section Of Slide */
+
+.side-text {
+  position: relative;
+  right: 90px;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-1 {
+  font-size: 20px;
+  color: gray;
+  margin-top: 2px;
+}
+
+.money {
+  font-weight: 400;
+  margin: 0;
+}
+
+.dollar {
+  font-weight: 900;
+  font-size: 45px;
+}
+.fa-brands {
+  color: #445665;
+}
+
+/* Image Section Of Slide */
+.c-image {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  right: 70px;
+}
+
+/* Sidebar Section*/
+
+.sidebar {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  margin: 50px 0;
+}
+
+.sidebar ul li a:hover {
+  color: black;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+/*Footer Section*/
+
+.art-button {
+  background-color: #7286d3;
+  padding: 15px;
+  color: white;
+  border: none;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-link {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-link a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #7286d3;
+}
+
+.side-link a:hover {
+  text-decoration: underline;
+}
+
+.art-button:hover {
+  background-color: lightgray;
+  color: #7286d3;
+}
+
+.icons {
+  margin: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Tablet Section */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 18;
+    text-align: center;
+    padding: 16px 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 180px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+  .sidebar ul li a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 45px;
+  }
+
+  .profile-name {
+    display: none;
+  }
+  .left-side {
+    position: absolute;
+  }
+
+  .side-text {
+    position: absolute;
+    right: 60px;
+  }
+
+  .c-image {
+    position: relative;
+    right: 160px;
+  }
+
+  .heading {
+    font-size: 70px;
+  }
+
+  .middle-button {
+    position: absolute;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Mobile Section */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 20;
+    text-align: center;
+    padding: 16px 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 180px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  .sidebar ul li a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 45px;
+  }
+
+  .profile-name {
+    display: none;
+  }
+  .left-side {
+    position: absolute;
+  }
+
+  .c-image {
+    position: relative;
+    right: 90px;
+    width: 50px;
+    height: 50px;
+    bottom: 200px;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+
+  .side-text {
+    position: absolute;
+    top: 120px;
+    right: 115px;
+  }
+
+  .text-1 {
+    font-size: 18px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-link {
+    margin-top: 10px;
+  }
+}
